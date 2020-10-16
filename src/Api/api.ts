@@ -4,6 +4,9 @@ import bodyParser from 'body-parser';
 //routes
 import routes from '../Routes/routes';
 
+//database
+import '../database/connection';
+
 const api = express()
 
 api.use(bodyParser.urlencoded({ extended: true }))
