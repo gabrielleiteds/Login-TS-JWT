@@ -1,4 +1,4 @@
 import 'reflect-metadata'; 
-import api from './Api/api';
+import api from './api/api';
 
 api.listen(process.env.PORT || 8000)
