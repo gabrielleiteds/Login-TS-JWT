@@ -4,10 +4,8 @@ import UserController from '../controllers/UserController';
 
 const routes = Router()
 
-routes.get('/', (request: Request, response: Response) => {
-  return response.json({ message: 'Hello World' })
-})
-
+//CRUD for users
+routes.get('/', UserController.index)
 routes.post('/user', UserController.create)
 
 export default routes; 
